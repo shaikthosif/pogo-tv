@@ -1,0 +1,142 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: url('https://i.pinimg.com/736x/45/dd/5e/45dd5e8ed98086ceb42687e74cc1e861.jpg') no-repeat center center / cover;
+  color: #333;
+  line-height: 1.6;
+}
+
+#main {
+  width: 100%;
+}
+
+/* Header */
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  gap: 10px;
+}
+
+#logo img {
+  height: 50px;
+  width: auto;
+}
+#logo :hover{
+  background-color: blue;
+}
+.info, #num, .logo, #click {
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.info :hover{
+  
+  color: blue;
+
+}
+#num :hover{
+  color: blue;
+}
+.logo :hover{
+  padding: 5px;
+  border-radius: 20px;
+  background-color: blue;
+}
+#click :hover{
+  padding:5px 7px;
+  background-color: blue;
+  border-radius:20px ;
+}
+
+/* Nav section */
+#nav nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+  background-color: #007bff;
+}
+
+#nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Page sections */
+#page1, #page2 {
+  padding: 20px;
+}
+
+#about1, #about2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1, .box2 {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.box1 img, .box2 img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#button2 {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#button2 :hover{
+  background-color: green;
+}
+
+/* Line divider */
+#line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin: 30px 0;
+}
+
+/* Responsive - Mobile tweaks */
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info, #num, .logo, #click {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #nav nav {
+    flex-direction: column;
+  }
+
+  #about1, #about2 {
+    flex-direction: column;
+  }
+}
